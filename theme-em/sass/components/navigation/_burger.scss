@@ -1,0 +1,147 @@
+@media screen and (min-width: 37.5em) { //style pour le menu burger en mode tablet
+
+	#menu_checkbox, .burger-lines {
+		display: none;
+	}
+    #primary-menu {
+        display: flex;
+    }
+    
+	#primary-menu {
+		display: flex;
+		position: static;
+		justify-content: space-around;
+	}
+
+}
+
+button //style du bouton du menu burger
+{
+    background-color: inherit;
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin-left:  30px;
+    margin-bottom: 20px;
+   
+}
+
+button:focus
+{    background-color: inherit;
+    transition: 1.2s cubic-bezier(0, 0.96, 1, 0.02) ;
+}
+.burger-lines
+{
+    position: relative;
+    top: 0;
+    height: 12px;
+    background-color: rgb(32, 2, 26);
+    margin-bottom: 12px;
+    transition: 0.3s ease transform, 0.3s ease top, 0.3s ease width, 0.3s ease right;
+    border-radius: 2px;
+}
+
+#burger div:first-child // style des div du menu burger
+{
+    transform-origin: 0;
+}
+
+burger div:last-child // style des div du menu burger
+{
+    margin-bottom: 0;
+    transform-origin: 60px;
+}
+
+burger div:nth-child(2) // style des div du menu burger
+{
+    right: 0;
+    width: 60px;
+
+}
+
+#menu_checkbox:checked + label:before//style pour le menu burger et ses animations
+{
+    background-color: #4caf50;
+}
+
+#menu_checkbox:checked + label div:first-child//style pour le menu burger et ses animations
+{
+    top: -6px;
+    transform: rotateZ(45deg);
+}
+
+#menu_checkbox:checked + label div:last-child//style pour le menu burger et ses animations
+{
+    top: 6px;
+    transform: rotateZ(45deg);
+}
+
+#menu_checkbox:checked + label div:nth-child(2)//style pour le menu burger et ses animations
+{
+    width: 85px;
+    top: 0;
+    right: 13px;
+    transform: rotateZ(-45deg);
+}
+
+
+
+
+/*
+
+    liste des animations
+*/
+
+@keyframes ouvrirX1 {
+    0% {transform: rotateZ(0deg);}
+    100% { transform: rotateZ(45deg);}
+}
+@keyframes fermeX1 {
+    0% {transform: rotateZ(45deg);}
+    100% {transform: rotateZ(0deg); }
+}
+
+
+@keyframes ouvrirX3 {
+    0% {transform: rotateZ(0deg); top:0px;left: 0px;}
+    100% { transform: rotateZ(-45deg); top:-25px;left: -5px;}
+}
+@keyframes fermeX3 {
+    0% {transform: rotateZ(-45deg); top:-25px;left: -5px;}
+    100% {transform: rotateZ(0deg); top:0px;left: 0px;}
+}
+@keyframes ouvrirX2 {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
+@keyframes fermeX2 {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+/*
+ donner les animtions au classes
+*/
+
+.ouvrirX1 {
+    animation: ouvrirX1 0.3s ease forwards;
+}
+.fermeX1 {
+    animation: fermeX1 0.3s ease  forwards ;
+}
+
+
+.ouvrirX2 {
+    animation: ouvrirX2 0.3s ease  forwards ;
+}
+.fermeX2 {
+    animation: fermeX2 0.3s ease  forwards ;
+}
+
+
+.ouvrirX3 {
+    animation: ouvrirX3 0.3s ease  forwards ;
+}
+.fermeX3 {
+    animation: fermeX3 0.3s ease  forwards ;
+}

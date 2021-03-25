@@ -1,0 +1,58 @@
+.sectionCours article { // style pour les articles de la sections cours
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: rgb(170, 203, 245);
+    text-align: center;
+    transition: 2s ease;
+    color: rgb(175, 104, 255);
+    font-weight: bold;
+    &:hover { // effet de grossissment lors dun hover
+        transform: scale(1.2);
+    }
+}
+#primary header{ // style pour le titre de la sectionCours
+    display: flex;
+    justify-content: center;
+    font-size: clamp(1rem, #{"-0.875rem + 8.333vw"}, 2rem);
+   border-bottom: 5px solid rgb(175, 104, 255);
+   width: 80%;
+   margin: 0 auto;
+   color: $color__link-hover;  
+}
+h2 {
+    display: flex;
+    justify-content: center;
+    font-size: clamp(1rem, #{"-0.875rem + 8.333vw"}, 2rem);
+    width: 80%;
+    margin: 0 auto;
+    color: $color__link-hover;  
+}
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 37.5em) {
+
+    .sectionCours article { //adapter la sectionCours pour les grands écrans 
+        width: 40%;
+    }
+    #Web, #Spécifique, #Jeu, .sectionCours section:nth-of-type(4), #Conception {
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+        width: 80%;
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+        article {
+            display: flex;
+            flex-direction: column;
+        }
+      }
+    
+ }

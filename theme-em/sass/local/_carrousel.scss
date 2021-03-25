@@ -1,0 +1,79 @@
+.carrousel { // style général pour le carrousel
+
+    width: 300vw;
+    height: 20vh;
+    display: flex;
+    transition: transform .5s;
+    transform: translateX(0);
+    div { // style des sections du carrousel
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        &:nth-of-type(1){// changement des sections individuelle du carrousel
+            background-color: $color__carousel1;
+        }
+        &:nth-of-type(2){// changement des sections individuelle du carrousel
+            background-color: $color__carousel2;
+        }
+        &:nth-of-type(3){// changement des sections individuelle du carrousel
+            background-color: $color__carousel3;
+        
+        }
+    }
+}
+
+.btn-wrap {// style pour le container des boutons
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  button {// style des boutons en temps que tel
+      border-radius: 30px;
+      color: $color__link-hover;
+      font-weight: bold ;
+      outline: none;
+  }
+}
+
+#un {// bg-color different pour chaque bouton
+    background-color: $color__carousel1;
+}
+#deux {// bg-color different pour chaque bouton
+    background-color: $color__carousel2;
+}
+#trois {// bg-color different pour chaque bouton
+    background-color: $color__carousel3;
+}
+
+.box-carou {//style pour le texte à l'intereieur du carrousel
+    a {
+        color: $color__link-hover;
+        font-size: clamp(1rem, #{"-0.875rem + 8.333vw"}, 2rem);
+    }
+}
+
+.carrousel-2 { // style général pour le carrousel
+
+    width: 300vw;
+    height: 20vh;
+    display: flex;
+    transition: transform .5s;
+    transform: translateX(0);
+    div { // style des sections du carrousel
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        &:nth-of-type(1){// changement des sections individuelle du carrousel
+            background-color: $color__carousel1;
+        }
+        &:nth-of-type(2){// changement des sections individuelle du carrousel
+            background-color: $color__carousel2;
+        }
+        &:nth-of-type(3){// changement des sections individuelle du carrousel
+            background-color: $color__carousel3;
+        
+        }
+    }
+}
