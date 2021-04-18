@@ -5,6 +5,12 @@
 	margin-right: auto;
 }
 
+@mixin phone {
+	@media(max-width : 750px)  {
+		@content
+	}
+}
+
 // Column width with margin
 @mixin column-width($numberColumns: 3) {
 	width: map-get($columns, $numberColumns) - ( ( $columns__margin * ( $numberColumns - 1 ) ) / $numberColumns );
@@ -16,3 +22,4 @@
 	}
 	
 }
+

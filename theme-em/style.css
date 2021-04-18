@@ -1428,23 +1428,18 @@ burger div:nth-child(2) {
   transform: translateX(0);
 }
 
-.carrousel-2 div {
+.carrousel-2 article {
+  width: 50%;
+}
+
+.carrousel-2 article div {
+  border: 5px solid #b53ee4;
+  height: 100%;
+  padding: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
-}
-
-.carrousel-2 div:nth-of-type(1) {
-  background-color: #af68ff;
-}
-
-.carrousel-2 div:nth-of-type(2) {
-  background-color: #8e00b9;
-}
-
-.carrousel-2 div:nth-of-type(3) {
-  background-color: #d751db;
+  width: 100%;
 }
 
 .sectionCours article {
@@ -1495,6 +1490,112 @@ h2 {
   }
   #Web article, #Spécifique article, #Jeu article, .sectionCours section:nth-of-type(4) article, #Conception article {
     display: flex;
+    flex-direction: column;
+  }
+}
+
+.galerie {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "img-1 img-1 img-2 img-2" "img-3 img-3 img-4 img-4" ". img-5 img-5 .";
+}
+
+.img-1 {
+  grid-area: img-1;
+}
+
+.img-2 {
+  grid-area: img-2;
+}
+
+.img-3 {
+  grid-area: img-3;
+}
+
+.img-4 {
+  grid-area: img-4;
+}
+
+.img-5 {
+  grid-area: img-5;
+}
+
+.container-projet {
+  background-color: #b0b0ff;
+  height: 200px;
+  border: 5px solid #af68ff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.container-projet .info {
+  opacity: 0;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  text-align: center;
+  transition: 0.5s ease;
+  color: #8e00b9;
+  font-weight: bolder;
+}
+
+.container-projet .infoFade {
+  opacity: 1;
+}
+
+.container-projet #btnInfo {
+  width: 100%;
+  margin: 0;
+  outline: none;
+  border: 5px solid #6304c9;
+  background-color: #8d35ec;
+  border-radius: 10px;
+  transition: 0.5s ease;
+}
+
+.container-projet #btnInfo:hover, .container-projet #btnInfo:focus {
+  border: 5px solid  #8d35ec;
+  background-color: #6304c9;
+}
+
+.container-projet .linkbtn {
+  display: inherit;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.container-projet .image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container-projet .image img {
+  border: 5px solid #6304c9;
+}
+
+.container-projet a, .container-projet a:visited {
+  font-weight: bolder;
+  color: #6304c9;
+  transition: 0.5s ease;
+}
+
+.container-projet a:hover {
+  color: #004966;
+}
+
+body.category-projet {
+  background-color: #6304c9;
+}
+
+@media (max-width: 750px) {
+  .galerie {
+    display: flex;
+    justify-content: space-evenly;
     flex-direction: column;
   }
 }

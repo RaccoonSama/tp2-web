@@ -43,9 +43,10 @@ get_header();
 						if ("XXXXXX" != $precedent) : ?>
 							</section>
 							<?php
-								if ($precedent == "Web") :?>
+								if (in_array($precedent, ['Jeu', 'Web', 'Spécifique', 'Image'])) :?>
 								<div class="btn-wrap">
-								<?php echo $chaine_bouton; ?>
+								<?php	 echo $chaine_bouton;
+									$chaine_bouton =''; ?>
 								</div>	
 								
 						<?php endif	?>
@@ -53,7 +54,7 @@ get_header();
 					<?php	endif; ?>
 					
 			 	<h2> <?php echo  $tPropriete['typeCours']; ?> </h2> 
-			 	<section class=<?= ($tPropriete['typeCours'] == "Web" )? "carrousel-2" : $tPropriete['typeCours'] ?>>
+			 	<section class=<?= in_array($tPropriete['typeCours'], ['Jeu', 'Web', 'Spécifique', 'Image'])? "carrousel-2" : $tPropriete['typeCours'] ?>>
 				<?php	endif; ?>
 				<?php 
 				
@@ -61,7 +62,7 @@ get_header();
 
 				
 				
-				if ( $tPropriete['typeCours'] == "Web") : 
+				if (in_array($tPropriete['typeCours'], ['Jeu', 'Web', 'Spécifique', 'Image']) ) : 
 				
 				get_template_part('template-parts/content', 'cours-slider');
 				$chaine_bouton .= 	'<button id="un" class="btn-slider">1</button>';

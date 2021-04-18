@@ -1,0 +1,85 @@
+.galerie {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "img-1 img-1 img-2 img-2"
+      "img-3 img-3 img-4 img-4"
+      ". img-5 img-5 .";
+  }
+.img-1 { grid-area: img-1; }
+.img-2 { grid-area: img-2; }
+.img-3 { grid-area: img-3; }
+.img-4 { grid-area: img-4; }
+.img-5 { grid-area: img-5; }
+
+.container-projet {
+    background-color: $color__link__menu-hover;
+   height: 200px;
+    border: 5px solid $color__carousel1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    .info {
+        opacity: 0;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        text-align: center;
+        transition: 0.5s ease;
+        color: $color__carousel2;
+        font-weight: bolder;
+    }
+    .infoFade {
+        opacity: 1;
+    }
+    #btnInfo {
+        width: 100%;
+        margin: 0;
+        outline: none;
+        border: 5px solid #6304c9;
+        background-color: #8d35ec;
+        border-radius: 10px;
+        transition: 0.5s ease;
+    }
+    #btnInfo:hover, #btnInfo:focus {
+        border: 5px solid  #8d35ec;
+        background-color: #6304c9;
+    }
+    .linkbtn {
+        display: inherit;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .image {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    img {
+        border: 5px solid $color__link__site-title-visited;
+    }
+}
+a, a:visited {
+    font-weight: bolder;
+    color: $color__link__site-title-visited;
+    transition: 0.5s ease;
+}
+a:hover {
+    color: $color__link__menu;
+}
+
+}
+
+body.category-projet{
+    background-color: $color__link__site-title-visited;
+}
+
+@include phone {
+    .galerie {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+}

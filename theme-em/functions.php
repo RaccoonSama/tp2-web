@@ -154,6 +154,7 @@ function theme_em_scripts() {
 	wp_register_script( 'theme-em-carrousel', get_template_directory_uri() . '/js/carrousel.js', array(), filemtime(get_template_directory() . '/js/carrousel.js' ), true);
 	wp_register_script( 'theme-em-carrousel-copy', get_template_directory_uri() . '/js/carrousel-copy.js', array(), filemtime(get_template_directory() . '/js/carrousel-copy.js' ), true);
 	wp_enqueue_script( 'theme-em-burger', get_template_directory_uri() . '/js/burger.js', array(), filemtime(get_template_directory() . '/js/burger.js' ), true);
+	wp_enqueue_script( 'theme-em-bouton-info', get_template_directory_uri() . '/js/bouton-info.js', array(), filemtime(get_template_directory() . '/js/bouton-info.js' ), true);
 
 	if (is_front_page()) {
 		wp_enqueue_script( 'theme-em-carrousel-copy');
@@ -192,14 +193,14 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
-function extraire_cours($query) {
-if( $query -> is_category('cours') ){
+function extraire_projet($query) {
+if( $query -> is_category('projet') ){
 	$query -> set('post_per_page', -1);
 	$query -> set('orderby', 'title');
 	$query -> set('order', 'asc');
 }
 };
-
+add_action('pre_get_posts', 'extraire_projet');
 
 function extraire_cours_front_page($query){
 	if( !is_admin() && $query->is_front_page() && $query->is_main_query() ){
