@@ -1658,3 +1658,7 @@ body.category-projet {
 .admin-formulaire input, .admin-formulaire textarea {
   outline: none;
 }
+
+.single-post {
+  background-color: #4169e1;
+}
