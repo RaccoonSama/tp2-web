@@ -1290,18 +1290,9 @@ burger div:nth-child(2) {
 }
 
 .site-footer {
-  margin-bottom: 0  !important;
   height: 20vh;
   background-color: #b53ee4;
   display: flex;
-  justify-items: center;
-  justify-content: center;
-}
-
-.site-footer div {
-  display: inherit;
-  justify-content: center;
-  align-items: center;
 }
 
 .wp-image-29:hover {
@@ -1611,7 +1602,7 @@ body.category-projet {
 
 .site-info {
   background-color: #b53ee4;
-  height: 150%;
+  height: 80%;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -1620,7 +1611,8 @@ body.category-projet {
 }
 
 .site-info #calendar-2 {
-  position: relative;
+  height: 250px;
+  border: 1px solid red;
 }
 
 .admin-formulaire {

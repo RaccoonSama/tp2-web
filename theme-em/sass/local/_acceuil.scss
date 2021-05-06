@@ -65,18 +65,14 @@
   }
 
   .site-footer {//style pour le footer de la page
-      margin-bottom: 0  !important;
+    //   margin-bottom: 0  !important;
       height: 20vh;
       background-color: $color__title;
       display: flex;
-      justify-items: center;
-      justify-content: center;
+    //   justify-items: center;
+    //   justify-content: center;
      
-      div{
-          display: inherit;
-        justify-content: center;
-        align-items: center;
-      }
+     
   }
 
  
