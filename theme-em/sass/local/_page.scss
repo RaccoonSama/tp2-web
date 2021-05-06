@@ -8,4 +8,19 @@
     width: 80%;
     margin: 0 auto;
     background-color: $color__link__menu-hover;
+    padding: 10px;
+    
+}
+.entry-footer {
+    background-color: $color__link__menu-hover;
+    width: 30%;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: row;
+   .cat-links{
+    display: inherit;
+    align-items: center;
+    width: 70%;
+    justify-content: space-evenly;
+}
 }
