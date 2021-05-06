@@ -1290,7 +1290,7 @@ burger div:nth-child(2) {
 }
 
 .site-footer {
-  height: 20vh;
+  height: 25vh;
   background-color: #b53ee4;
   display: flex;
 }
@@ -1611,8 +1611,42 @@ body.category-projet {
 }
 
 .site-info #calendar-2 {
-  height: 250px;
-  border: 1px solid red;
+  height: 200px;
+  padding: 10px;
+  margin: 0;
+}
+
+.site-info #calendar-2 table {
+  margin-bottom: 0;
+}
+
+.site-info #calendar-2 .wp-calendar-nav {
+  margin-top: -5px;
+}
+
+.single-post .site-footer, .category-projet .site-footer {
+  height: 30vh;
+  overflow-y: hidden;
+}
+
+.single-post .site-footer .widget_categories, .category-projet .site-footer .widget_categories {
+  margin-bottom: -20px;
+}
+
+.single-post .site-footer .widget_categories .widget_categories ul, .category-projet .site-footer .widget_categories .widget_categories ul {
+  margin: 0;
+}
+
+.single-post .site-footer .site-info, .category-projet .site-footer .site-info {
+  height: 100%;
+}
+
+.single-post .site-footer .site-info #calendar-2, .category-projet .site-footer .site-info #calendar-2 {
+  height: 100%;
+}
+
+.single-post .site-footer .site-info #calendar-2 table, .category-projet .site-footer .site-info #calendar-2 table {
+  height: 30%;
 }
 
 .admin-formulaire {
