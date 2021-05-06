@@ -15,6 +15,10 @@
 .img-4 { grid-area: img-4; }
 .img-5 { grid-area: img-5; }
 
+.category-projet .info {
+    opacity: 0;
+}
+
 .container-projet {
     background-color: $color__link__menu-hover;
    height: 200px;
@@ -23,7 +27,6 @@
     flex-direction: row;
     justify-content: space-evenly;
     .info {
-        opacity: 0;
         display: flex;
         justify-content: space-evenly;
         flex-direction: column;

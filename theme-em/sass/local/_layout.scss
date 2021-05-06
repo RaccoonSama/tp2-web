@@ -1,0 +1,17 @@
+.wp-block-columns {
+    width: 80%;
+    margin: 0 auto;
+    border: 5px solid $color__carousel1;
+}
+
+.nouvelles-container h2 {
+margin-bottom: 20px;
+margin-top: 20px;
+}
+
+.wp-block-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(1rem, #{"-0.875rem + 8.333vw"}, 1.5rem);
+}

@@ -662,16 +662,6 @@ textarea {
 /*--------------------------------------------------------------
 # Layouts
 --------------------------------------------------------------*/
-.no-sidebar .site {
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-areas: "header" "main" "footer";
-}
-
-.site-branding, #primary, #colophon {
-  margin: 0 0 3rem;
-}
-
 /*--------------------------------------------------------------
 # Components
 --------------------------------------------------------------*/
@@ -1362,6 +1352,24 @@ burger div:nth-child(2) {
   margin-bottom: -7vh;
 }
 
+.wp-block-columns {
+  width: 80%;
+  margin: 0 auto;
+  border: 5px solid #af68ff;
+}
+
+.nouvelles-container h2 {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.wp-block-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: clamp(1rem, -0.875rem + 8.333vw, 1.5rem);
+}
+
 .carrousel {
   width: 300vw;
   height: 20vh;
@@ -1439,7 +1447,7 @@ burger div:nth-child(2) {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 100vw;
 }
 
 .sectionCours article {
@@ -1484,8 +1492,6 @@ h2 {
     display: flex;
     flex-direction: row;
     margin: 0 auto;
-    width: 80%;
-    flex-wrap: wrap;
     margin-bottom: 10px;
   }
   #Web article, #Spécifique article, #Jeu article, .sectionCours section:nth-of-type(4) article, #Conception article {
@@ -1523,6 +1529,10 @@ h2 {
   grid-area: img-5;
 }
 
+.category-projet .info {
+  opacity: 0;
+}
+
 .container-projet {
   background-color: #b0b0ff;
   height: 200px;
@@ -1533,7 +1543,6 @@ h2 {
 }
 
 .container-projet .info {
-  opacity: 0;
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
@@ -1598,4 +1607,54 @@ body.category-projet {
     justify-content: space-evenly;
     flex-direction: column;
   }
+}
+
+.site-info {
+  background-color: #b53ee4;
+  height: 150%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.site-info #calendar-2 {
+  position: relative;
+}
+
+.admin-formulaire {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 5px solid #af68ff;
+  padding: 10px;
+  background-color: #b0b0ff;
+}
+
+.admin-formulaire h3 {
+  text-align: center;
+  font-size: clamp(1rem, -0.875rem + 8.333vw, 1.5rem);
+  color: #191970;
+}
+
+.admin-formulaire button {
+  outline: none;
+  border: 5px solid #6304c9;
+  background-color: #8d35ec;
+  width: 160px;
+  margin: 0 auto;
+  margin-top: 10px;
+  transition: ease 0.5s;
+}
+
+.admin-formulaire button:hover, .admin-formulaire button:focus {
+  border: 5px solid  #8d35ec;
+  background-color: #6304c9;
+}
+
+.admin-formulaire input, .admin-formulaire textarea {
+  outline: none;
 }

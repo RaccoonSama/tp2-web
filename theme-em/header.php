@@ -20,7 +20,7 @@
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class(is_front_page() || is_category() ? 'no-sidebar' : ''); ?>>
 <?php wp_body_open(); ?>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'theme-em' ); ?></a>
@@ -47,47 +47,6 @@
 		<?php
 		if (is_front_page()) :
 		?>
-
-			<?php
-			
-			$session1 = rand(1,4);
-			$session2 = rand(1,4);
-			$session3 = rand(1,4);
-			$coursAffiche1;
-			$coursAffiche2;
-			$coursAffiche3;
-	
-			if ($session1 == 1) {
-				$coursAffiche1 = '51';
-			}else if ($session1 == 2) {
-				$coursAffiche1 = '48';
-			}else if ($session1 == 3) {
-				$coursAffiche1 = '49';
-			}else if ($session1 == 4) {
-				$coursAffiche1 = '50';
-			}
-
-			if ($session2 == 1) {
-				$coursAffiche2 = '55';
-			}else if ($session2 == 2) {
-				$coursAffiche2 = '52';
-			}else if ($session2 == 3) {
-				$coursAffiche2 = '53';
-			}else if ($session2 == 4) {
-				$coursAffiche2 = '54';
-			}
-
-			if ($session3 == 1) {
-				$coursAffiche3 = '57';
-			}else if ($session3 == 2) {
-				$coursAffiche3 = '59';
-			}else if ($session3 == 3) {
-				$coursAffiche3 = '56';
-			}else if ($session3 == 4) {
-				$coursAffiche3 = '58';
-			}
-
-			?>
 
 
 		

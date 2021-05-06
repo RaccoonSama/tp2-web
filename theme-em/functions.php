@@ -133,6 +133,17 @@ function theme_em_widgets_init() {
 			'after_title'   => '</h2>',
 		)
 	);
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Pied-de-page', 'theme-em' ),
+			'id'            => 'footer-1',
+			'description'   => esc_html__( 'Add widgets here.', 'theme-em' ),
+			'before_widget' => '<section id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</section>',
+			'before_title'  => '<h2 class="widget-title">',
+			'after_title'   => '</h2>',
+		)
+	);
 }
 add_action( 'widgets_init', 'theme_em_widgets_init' );
 
@@ -155,9 +166,16 @@ function theme_em_scripts() {
 	wp_register_script( 'theme-em-carrousel-copy', get_template_directory_uri() . '/js/carrousel-copy.js', array(), filemtime(get_template_directory() . '/js/carrousel-copy.js' ), true);
 	wp_enqueue_script( 'theme-em-burger', get_template_directory_uri() . '/js/burger.js', array(), filemtime(get_template_directory() . '/js/burger.js' ), true);
 	wp_enqueue_script( 'theme-em-bouton-info', get_template_directory_uri() . '/js/bouton-info.js', array(), filemtime(get_template_directory() . '/js/bouton-info.js' ), true);
+	wp_enqueue_script( 'theme-em-rest_api', get_template_directory_uri() . '/js/rest_api.js', array(), filemtime(get_template_directory() . '/js/rest_api.js' ), true);
+
 
 	if (is_front_page()) {
 		wp_enqueue_script( 'theme-em-carrousel-copy');
+		wp_enqueue_script( 'theme-em-rest_api');
+		wp_localize_script('theme-em-rest_api', 'monObjJS', array(
+			'nonce' => wp_create_nonce('wp_rest'),
+			'URLdomain' => get_site_url()
+		));
 	}
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
