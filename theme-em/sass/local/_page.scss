@@ -2,5 +2,10 @@
  
 }
 .single-post {
-    background-color: $color__link;
+    background-color: $color__link__site-title-visited;
+}
+.entry-content {
+    width: 80%;
+    margin: 0 auto;
+    background-color: $color__link__menu-hover;
 }

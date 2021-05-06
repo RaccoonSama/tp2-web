@@ -1660,5 +1660,11 @@ body.category-projet {
 }
 
 .single-post {
-  background-color: #4169e1;
+  background-color: #6304c9;
+}
+
+.entry-content {
+  width: 80%;
+  margin: 0 auto;
+  background-color: #b0b0ff;
 }
