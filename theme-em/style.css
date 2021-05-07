@@ -1689,7 +1689,13 @@ body.category-projet {
   background-color: #6304c9;
 }
 
+.entry-header {
+  flex-direction: column;
+  border: none !important;
+}
+
 .entry-content {
+  border: 5px solid #af68ff;
   width: 80%;
   margin: 0 auto;
   background-color: #b0b0ff;
@@ -1697,6 +1703,7 @@ body.category-projet {
 }
 
 .entry-footer {
+  border: 5px solid #af68ff;
   background-color: #b0b0ff;
   width: 30%;
   margin-left: 10%;

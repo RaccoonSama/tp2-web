@@ -1,10 +1,16 @@
-.post {
+// .post {
  
-}
+// }
 .single-post {
     background-color: $color__link__site-title-visited;
 }
+.entry-header {
+     flex-direction: column ;
+     border: none !important;
+}
 .entry-content {
+   
+    border: 5px solid $color__carousel1;
     width: 80%;
     margin: 0 auto;
     background-color: $color__link__menu-hover;
@@ -12,6 +18,7 @@
     
 }
 .entry-footer {
+    border: 5px solid $color__carousel1;
     background-color: $color__link__menu-hover;
     width: 30%;
     margin-left: 10%;
