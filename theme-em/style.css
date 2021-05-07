@@ -1694,6 +1694,12 @@ body.category-projet {
   border: none !important;
 }
 
+.entry-header .entry-meta {
+  border-bottom: 5px solid #af68ff;
+  width: 40%;
+  margin-bottom: 2%;
+}
+
 .entry-content {
   border: 5px solid #af68ff;
   width: 80%;

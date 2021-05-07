@@ -7,7 +7,13 @@
 .entry-header {
      flex-direction: column ;
      border: none !important;
-}
+     .entry-meta {
+        border-bottom: 5px solid $color__carousel1;
+        width: 40%;
+        margin-bottom: 2%;
+    }
+     }
+
 .entry-content {
    
     border: 5px solid $color__carousel1;
