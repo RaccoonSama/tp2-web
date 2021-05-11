@@ -1700,6 +1700,16 @@ body.category-projet {
   margin-bottom: 2%;
 }
 
+.entry-header .entry-meta a {
+  text-decoration: none;
+  color: #191970;
+}
+
+.entry-header .entry-meta a:hover {
+  color: #004966;
+  text-decoration: underline;
+}
+
 .entry-content {
   border: 5px solid #af68ff;
   width: 80%;

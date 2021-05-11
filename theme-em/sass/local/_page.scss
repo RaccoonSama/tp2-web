@@ -11,6 +11,14 @@
         border-bottom: 5px solid $color__carousel1;
         width: 40%;
         margin-bottom: 2%;
+        a{
+            text-decoration: none;
+            color: $color__link-hover;
+            &:hover {
+            color: $color__link__menu;
+            text-decoration: underline;
+            }
+        }
     }
      }
 
