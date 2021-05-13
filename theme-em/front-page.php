@@ -83,7 +83,7 @@ get_header();
 			<h3>Ajouter une nouvelle</h3>
 			<input type="text" name="title" placeholder="Titre">
 			<textarea name="content" placeholder="Contenu"></textarea>
-			<button id="btn-submit"> Soumettre</button>
+			<button id="btn-submit2"> Soumettre</button>
 			</section>
 
 
