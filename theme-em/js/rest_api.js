@@ -120,13 +120,13 @@ let creerannonce = new XMLHttpRequest();
 
  function monAjax2()
  {
-    let maRequete = new XMLHttpRequest();
-    console.log(maRequete);
-    maRequete.open('GET', monObjJS.URLdomain + '/wp-json/wp/v2/posts?per_page=1');
-    maRequete.onload = function () {
-        console.log(maRequete)
-        if (maRequete.status >= 200 && maRequete.status < 400) {
-            let data = JSON.parse(maRequete.responseText);
+    let maRequete2 = new XMLHttpRequest();
+    console.log(maRequete2);
+    maRequete2.open('GET', monObjJS.URLdomain + '/wp-json/wp/v2/posts?per_page=1');
+    maRequete2.onload = function () {
+        console.log(maRequete2)
+        if (maRequete2.status >= 200 && maRequete2.status < 400) {
+            let data = JSON.parse(maRequete2.responseText);
 
             let chaine = '';
             for (const elem of data) {
@@ -140,10 +140,10 @@ let creerannonce = new XMLHttpRequest();
             console.log('La connexion est faite mais il y a une erreur')
         }
     }
-    maRequete.onerror = function () {
+    maRequete2.onerror = function () {
         console.log("erreur de connexion");
     }
-    maRequete.send()
+    maRequete2.send()
  }
 
 
