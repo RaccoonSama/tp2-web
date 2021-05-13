@@ -1,4 +1,4 @@
-# lab-10
+# tp2
 
 auteur : Luna Gagnon Lavoie
 
