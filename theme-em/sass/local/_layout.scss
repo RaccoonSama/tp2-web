@@ -1,4 +1,4 @@
-.wp-block-columns {
+.wp-block-columns, .annonces {
     width: 80%;
     margin: 0 auto;
     border: 5px solid $color__carousel1;
@@ -15,3 +15,4 @@ margin-top: 20px;
     align-items: center;
     font-size: clamp(1rem, #{"-0.875rem + 8.333vw"}, 1.5rem);
 }
+

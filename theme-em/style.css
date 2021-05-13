@@ -1343,7 +1343,7 @@ burger div:nth-child(2) {
   margin-bottom: -7vh;
 }
 
-.wp-block-columns {
+.wp-block-columns, .annonces {
   width: 80%;
   margin: 0 auto;
   border: 5px solid #af68ff;
