@@ -1649,7 +1649,7 @@ body.category-projet {
   height: 30%;
 }
 
-.admin-formulaire {
+.admin-formulaire, .admin-formulaire2 {
   width: 80%;
   margin: 0 auto;
   display: flex;
@@ -1660,13 +1660,13 @@ body.category-projet {
   background-color: #b0b0ff;
 }
 
-.admin-formulaire h3 {
+.admin-formulaire h3, .admin-formulaire2 h3 {
   text-align: center;
   font-size: clamp(1rem, -0.875rem + 8.333vw, 1.5rem);
   color: #191970;
 }
 
-.admin-formulaire button {
+.admin-formulaire button, .admin-formulaire2 button {
   outline: none;
   border: 5px solid #6304c9;
   background-color: #8d35ec;
@@ -1676,12 +1676,12 @@ body.category-projet {
   transition: ease 0.5s;
 }
 
-.admin-formulaire button:hover, .admin-formulaire button:focus {
+.admin-formulaire button:hover, .admin-formulaire button:focus, .admin-formulaire2 button:hover, .admin-formulaire2 button:focus {
   border: 5px solid  #8d35ec;
   background-color: #6304c9;
 }
 
-.admin-formulaire input, .admin-formulaire textarea {
+.admin-formulaire input, .admin-formulaire textarea, .admin-formulaire2 input, .admin-formulaire2 textarea {
   outline: none;
 }
 
