@@ -6,8 +6,8 @@
 
 
   
-    window.addEventListener('load', monAjax)
-    // window.addEventListener('load', monAjax2)
+    window.addEventListener('load', monAjax);
+    window.addEventListener('load', monAjax2);
     function monAjax()
     {
        let maRequete = new XMLHttpRequest();
