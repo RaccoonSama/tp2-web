@@ -12,7 +12,7 @@
     {
        let maRequete = new XMLHttpRequest();
        console.log(maRequete);
-       maRequete.open('GET', monObjJS.URLdomain + '/wp-json/wp/v2/posts?per_page=3');
+       maRequete.open('GET', monObjJS.URLdomain + '/wp-json/wp/v2/posts?per_page=3&offset=1');
        maRequete.onload = function () {
            console.log(maRequete)
            if (maRequete.status >= 200 && maRequete.status < 400) {
