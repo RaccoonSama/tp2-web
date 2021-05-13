@@ -11,10 +11,9 @@ get_header();
 ?>
 
 
-<section class="carrousel">
-								<div class="box-carou"></div>
-								<div class="box-carou"></div>
-								<div class="box-carou"></div>
+<section class="annonces">
+		<div class="annonce"></div>
+								
 </section>
 
 	<main id="primary" class="site-main">
@@ -82,6 +81,14 @@ get_header();
 			
 			<section class="admin-formulaire">
 			<h3>Ajouter une nouvelle</h3>
+			<input type="text" name="title" placeholder="Titre">
+			<textarea name="content" placeholder="Contenu"></textarea>
+			<button id="btn-submit"> Soumettre</button>
+			</section>
+
+
+			<section class="admin-formulaire2">
+			<h3>Ajouter une Annonce</h3>
 			<input type="text" name="title" placeholder="Titre">
 			<textarea name="content" placeholder="Contenu"></textarea>
 			<button id="btn-submit"> Soumettre</button>
