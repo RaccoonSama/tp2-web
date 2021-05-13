@@ -112,7 +112,7 @@ let creerannonce = new XMLHttpRequest();
 })
 
 
- let bouton = document.getElementById('btn_nouvelles');
+
  let annonces = document.querySelector('.annonce');
 
 
